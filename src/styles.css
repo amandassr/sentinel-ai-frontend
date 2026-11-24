@@ -612,3 +612,28 @@ footer {
 .history-delete:hover { background:#f7e8df; border-color:#e9c9ba; }
 @media(max-width:900px) { .analytics-dashboard-grid { grid-template-columns:1fr; } }
 @media(max-width:600px) { .analytics-nav { gap:4px; } .analytics-nav button { padding:9px 8px; font-size:10px; } .analytics-overview-title { align-items:flex-start; flex-direction:column; } .analytics-overview-title .primary-action { align-self:stretch; } .analysis-status { display:none; } .detail-file-badge { display:none; } .analytics-bar-row { grid-template-columns:minmax(75px,1fr) minmax(50px,1.5fr) 38px; gap:7px; } .history-open .analysis-status { display:none; } }
+
+
+/* ABAS OPERACIONAIS: TRANSACIONAL E INVESTIGAÇÃO */
+.domain-workspace { width:min(1180px,100%); margin:54px auto 52px; }
+.domain-heading { display:flex; align-items:flex-start; justify-content:space-between; gap:24px; margin-bottom:38px; }
+.domain-heading h2 { margin:10px 0 9px; color:var(--coffee); font-family:'Playfair Display',serif; font-size:clamp(32px,4vw,43px); font-weight:500; }
+.domain-heading p { max-width:720px; margin:0; color:#79695b; font-size:13px; line-height:1.85; }
+.domain-mark { width:56px; height:56px; flex-shrink:0; display:grid; place-items:center; color:var(--gold); background:#f0e3d0; border:1px solid #e3d1b9; border-radius:16px; }
+.domain-flow-label { display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:14px; }
+.domain-flow-label span { color:var(--brown); font-size:10px; font-weight:700; letter-spacing:1.5px; }
+.domain-flow-label small { color:#9a8877; font-size:10px; }
+.domain-stage-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+.domain-stage { min-height:220px; padding:21px; background:rgba(255,250,242,.82); border:1px solid rgba(118,80,57,.15); border-radius:14px; box-shadow:0 12px 35px rgba(53,35,29,.035); }
+.domain-stage-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:24px; }
+.domain-stage-number { color:#b49a7d; font-family:'Playfair Display',serif; font-size:19px; }
+.domain-stage-icon { width:39px; height:39px; display:grid; place-items:center; color:var(--brown); background:#f0e3d0; border-radius:11px; }
+.domain-stage h3 { margin:0 0 9px; color:var(--coffee); font-family:'Playfair Display',serif; font-size:19px; font-weight:500; }
+.domain-stage p { margin:0; color:#806f60; font-size:11px; line-height:1.8; }
+.domain-note { display:flex; align-items:flex-start; gap:12px; margin-top:18px; padding:17px; color:#765039; background:#f0e6d8; border:1px solid #e4d4c0; border-radius:12px; }
+.domain-note > svg { flex-shrink:0; margin-top:1px; color:#a77b4e; }
+.domain-note strong { display:block; margin-bottom:5px; color:var(--coffee); font-size:11px; }
+.domain-note p { margin:0; color:#806f60; font-size:10px; line-height:1.75; }
+.domain-workspace > .disclaimer { margin-top:16px; }
+@media(max-width:850px) { .domain-stage-grid { grid-template-columns:1fr; } .domain-stage { min-height:0; } .domain-stage-top { margin-bottom:14px; } }
+@media(max-width:600px) { .domain-workspace { margin-top:35px; } .domain-heading { margin-bottom:27px; } .domain-mark { width:45px; height:45px; } .domain-flow-label { align-items:flex-start; flex-direction:column; gap:5px; } .domain-stage { padding:17px; } }
