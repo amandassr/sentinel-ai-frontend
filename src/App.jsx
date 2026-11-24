@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {
-  ShieldCheck, LayoutDashboard, Search, Network, AlertTriangle,
+  ShieldCheck, LayoutDashboard, Search, AlertTriangle,
   Settings, Menu, Send, PawPrint, BarChart3, Activity, Scale,
   FileSearch, ClipboardList, FolderSearch, ArrowLeftRight
 } from "lucide-react";
