@@ -84,7 +84,17 @@ export default function App() {
           </p>
         </section>
 
-        <section className="workspace">
+        {active === "APIs e permissionamento" ? (
+        <section className="api-workspace">
+          <div className="api-intro">
+            <span className="section-kicker">MOTOR DE REGRAS · PREVENÇÃO</span>
+            <h2>APIs e permissionamento</h2>
+            <p>Calcule o nível de permissionamento, consulte atividades e revise os critérios aplicáveis.</p>
+          </div>
+          <iframe title="Calculadora de APIs e permissionamento" src="/api-calculator.html" />
+        </section>
+      ) : (
+      <section className="workspace">
           <div className="workspace-heading">
             <div>
               <span className="section-kicker">ASSISTENTE INTELIGENTE</span>
@@ -132,6 +142,7 @@ export default function App() {
             e a decisão final permanecem sob responsabilidade do analista.
           </p>
         </section>
+      )}
 
         <footer>© 2026 SENTINEL AI · INTELIGÊNCIA EM PREVENÇÃO A FRAUDES</footer>
       </main>
