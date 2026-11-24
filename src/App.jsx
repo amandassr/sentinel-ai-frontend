@@ -8,8 +8,7 @@ import AnalyticsWorkspace from "./modules/analytics/AnalyticsWorkspace";
 const modules = [
   { name: "Visão geral", icon: LayoutDashboard },
   { name: "Inteligência Analítica", icon: BarChart3 },
-  { name: "Análise KYC", icon: Search },
-  { name: "Análise KYB", icon: FileSearch },
+  { name: "Análise Cadastral e de Risco", icon: Search },
   { name: "Background Check", icon: Network },
   { name: "Inteligência de risco", icon: AlertTriangle },
   { name: "APIs e permissionamento", icon: ShieldCheck }
@@ -52,7 +51,7 @@ export default function App() {
           <section className="welcome">
             <div className="eyebrow"><span /> INTELIGÊNCIA QUE OBSERVA. PRECISÃO QUE PROTEGE.</div>
             <h2>Bem-vindo ao <em>SENTINEL.</em></h2>
-            <p>Sua central de inteligência em KYC, KYB e prevenção a fraudes. Analise cenários, identifique inconsistências e organize informações para decisões mais seguras.</p>
+            <p>Sua central de inteligência em análise cadastral, risco e prevenção a fraudes. Analise pessoas e empresas em um fluxo integrado, identifique inconsistências e organize informações para decisões mais seguras.</p>
           </section>
         )}
 
@@ -75,10 +74,10 @@ export default function App() {
             </div>
             <div className="assistant-message">
               <div className="assistant-avatar"><PawPrint size={19} /></div>
-              <div><strong>SENTINEL AI</strong><p>Olá! Estou pronto para apoiar suas análises de KYC, KYB, background check, inteligência de risco e permissionamento de APIs. O que vamos investigar hoje?</p></div>
+              <div><strong>SENTINEL AI</strong><p>Olá! Estou pronto para apoiar análises cadastrais e de risco de pessoas e empresas, background check, inteligência de risco e permissionamento de APIs. O que vamos investigar hoje?</p></div>
             </div>
             <div className="suggestions">
-              {["Analisar um cenário de KYC", "Avaliar riscos de uma empresa", "Revisar permissionamento de APIs"].map((item) => <button key={item} onClick={() => setMessage(item)}>{item}</button>)}
+              {["Analisar um cadastro e seus riscos", "Investigar apontamentos de background check", "Revisar permissionamento de APIs"].map((item) => <button key={item} onClick={() => setMessage(item)}>{item}</button>)}
             </div>
             <form className="chat-input" onSubmit={(e) => e.preventDefault()}>
               <input value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Descreva o cenário que deseja analisar..." />
