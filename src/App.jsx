@@ -7,7 +7,7 @@ import AnalyticsWorkspace from "./modules/analytics/AnalyticsWorkspace";
 
 const modules = [
   { name: "Visão geral", icon: LayoutDashboard },
-  { name: "Inteligência Analítica", icon: ChartNoAxesCombined },
+  { name: "Inteligência Analítica", icon: BarChart3 },
   { name: "Análise KYC", icon: Search },
   { name: "Análise KYB", icon: FileSearch },
   { name: "Background Check", icon: Network },
