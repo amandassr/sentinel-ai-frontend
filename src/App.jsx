@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {
   ShieldCheck, LayoutDashboard, Search, FileSearch, Network,
-  AlertTriangle, Settings, Menu, Send, PawPrint, ChartNoAxesCombined
+  AlertTriangle, Settings, Menu, Send, PawPrint, BarChart3
 } from "lucide-react";
 import AnalyticsWorkspace from "./modules/analytics/AnalyticsWorkspace";
 
